@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title id="titleWeb">Happy Birthday!!! :)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="../style/main.css" />
+</head>
+<body>
+    <audio class="song" loop autoplay>
+        <source src="./music/hbd.mpeg" type="audio/mp3">
+    </audio>
+    <div class="giftcontainer">
+        <div class="gift">
+            <input type="checkbox" id="click">
+            <label for="click" class="click"></label>
+            <div class="wishes"> Happy Birthday!</div>
+            <a class="here" href="#">Click here</a>
+        </div>
+    </div>
+    <div id="delayedText" class="hidden-text"> Just Kidding HAHA</div>
+    <div id="buttonContainer" class="button-container hidden-buttons">
+        <button id="yes"  type="button" class="btn btn-info btn-lg">Here</button>
+        <button id="no" type="button" class="btn btn-danger btn-lg"><a href="..\page\amplop.html" style="text-decoration:none; color:white">Skip</a></button>
+    </div>
+    <script>
+
+        function showDelayedText() {
+            var delayedText = document.getElementById('delayedText');
+            delayedText.style.display = 'block';
+        }
+        setTimeout(showDelayedText, 20000);
+
+        function showDelayedButtons() {
+            var buttonContainer = document.getElementById('buttonContainer');
+            buttonContainer.style.display = 'block';
+        }
+
+        
+        setTimeout(showDelayedButtons, 25000);
+    </script>
+
+    
+   <!-- Greensock -->
+   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" async></script>
+   <!-- Sweetalert -->
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script type="application/javascript" src="./style/main.js"></script>
+
+    
+</body>
+
+
+</html>
